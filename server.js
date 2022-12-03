@@ -108,16 +108,13 @@ io.on('connection', function(socket){
     //Based on turn allow users to play
     function handleTurn(turn, roomName) {
       if(turn == 0){
-        console.log("turn: " + turn)
         io.to(socketRooms[roomName][0]).emit('turnHandle');
       }
       else if(turn == 1){
         io.to(socketRooms[roomName][1]).emit('turnHandle');
-        console.log("turn: " + turn)
       }
       else if(turn == 2){
         io.to(socketRooms[roomName][2]).emit('turnHandle');
-        console.log("3")
       }
     }
 

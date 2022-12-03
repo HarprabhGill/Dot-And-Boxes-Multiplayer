@@ -84,6 +84,7 @@ button{
     width: 200px;
     margin-bottom: 20px;
     margin-right: 20px;
+    margin-left: 20px;
 }
 
 #ready{
@@ -97,16 +98,19 @@ button{
 
 .p1Score{
     margin-right: 50px;
+    margin-left: 50px;
     color: red;
 }
 
 .p2Score{
     margin-right: 50px;
+    margin-left: 50px;
     color: green;
 }
 
 .p3Score{
     margin-right: 50px;
+    margin-left: 50px;
     color: orange;
 }
 
