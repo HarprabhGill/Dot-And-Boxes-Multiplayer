@@ -84,7 +84,7 @@ function handleNeedMorePlayers() {
     alert('Need 3 Players to Start Game')
 }
 
-//Sets up the game  
+//Sets up the game screen
 function handleReadyGame(name1, name2, name3) {
     initialScreen.style.display = "none";
     lobbyScreen.style.display = "none";
@@ -183,14 +183,14 @@ let square7 = false;
 let square8 = false;
 let square9 = false;
 
-//Initializes the score and all empty boxes
+//Initialize the score and all empty boxes
 var boxes = [square1, square2, square3, square4, square5, square6, square7, square8, square9];
 var turn = 0;
 var red = 0;
 var green = 0;
 var yellow = 0;
 
-//Get all horizontal lines from doc
+//Get all horizontal lines from page
 var line11 = document.getElementById("line11");
 var line12 = document.getElementById("line12");
 var line13 = document.getElementById("line13");
@@ -204,7 +204,7 @@ var line41 = document.getElementById("line41");
 var line42 = document.getElementById("line42");
 var line43 = document.getElementById("line43");
 
-//Get all vertical lines from doc
+//Get all vertical lines from page
 var vline11 = document.getElementById("vline11");
 var vline12 = document.getElementById("vline12");
 var vline13 = document.getElementById("vline13");
@@ -298,7 +298,7 @@ function Check(turn) {
     }
 }
 
-//Once this is received from the server, make the lines visible to all and show game end screen if the game is done
+//Make the lines visible to all and show game end screen if the game is done
 function Handler(line, roomName){
     var temp = document.getElementById(line);
     if(temp.style.visibility == "visible"){
