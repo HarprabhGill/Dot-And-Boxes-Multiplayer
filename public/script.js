@@ -1,5 +1,5 @@
 //Connect socket
-var socket = io();
+const socket = io('https://sleepy-island-33889.herokuapp.com/');
 
 //Handle events from server
 socket.on('init', handleInit);
