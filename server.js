@@ -8,7 +8,7 @@ const { Server } = require("socket.io");
 const io = require('socket.io')();
 
 //Use files from public folder
-app.use(express.static(path.join(__dirname, "public")))
+//app.use(express.static(path.join(__dirname, "public")))
 
 //Start on index.html
 app.get('/', (req, res) => {
